@@ -1,4 +1,4 @@
-##MagicPlay Service
+##MagicPlay ARM
 
 Precompiled ARM binaries that you can use on your RaspberryPi!
 
@@ -12,10 +12,25 @@ For more information please look @ [http://www.magicplay.com/](http://www.magicp
 ### Install
 
 ```
-git clone https://github.com/doubletwist/magicplay-arm-service
-cd magicplay-arm-service
+curl -O https://github.com/doubletwist/magicplay-arm/tarball/master # or clone this repo
+cd magicplay-arm
 sh install.sh
 ```
+
+### RaspberryPi Image (Alternative Install)
+
+Download our RaspberryPi ArchLinux-2014.05 image to get up and running in no time!
+
+```
+curl -C - -O http://download.doubletwist.com/magicplay/MagicPlayPi-Al-2014.05.img.zip
+```
+
+unzip it and
+
+```
+dd bs=1m if=MagicPlayPi-Al-2014.05.img of=</dev/foobar>
+```
+
 
 ### Links
 
