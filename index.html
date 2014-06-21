@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Magicplay Service by doubletwist</title>
+    <title>Magicplay ARM by doubletwist</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,21 +15,21 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Magicplay Service</h1>
+        <h1>Magicplay ARM</h1>
         <p>http://www.magicplay.com/</p>
 
-        <p class="view"><a href="https://github.com/doubletwist/magicplay-arm-service">View the Project on GitHub <small>doubletwist/magicplay-arm-service</small></a></p>
+        <p class="view"><a href="https://github.com/doubletwist/magicplay-arm">View the Project on GitHub <small>doubletwist/magicplay-arm</small></a></p>
 
 
         <ul>
-          <li><a href="https://github.com/doubletwist/magicplay-arm-service/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/doubletwist/magicplay-arm-service/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/doubletwist/magicplay-arm-service">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/doubletwist/magicplay-arm/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/doubletwist/magicplay-arm/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/doubletwist/magicplay-arm">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
         <h2>
-<a name="magicplay-service" class="anchor" href="#magicplay-service"><span class="octicon octicon-link"></span></a>MagicPlay Service</h2>
+<a name="magicplay-arm" class="anchor" href="#magicplay-arm"><span class="octicon octicon-link"></span></a>MagicPlay ARM</h2>
 
 <p>Precompiled ARM binaries that you can use on your RaspberryPi!</p>
 
@@ -43,9 +43,22 @@
 <h3>
 <a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h3>
 
-<pre><code>git clone https://github.com/doubletwist/magicplay-arm-service
-cd magicplay-arm-service
+<pre><code>curl -O https://github.com/doubletwist/magicplay-arm/tarball/master # or clone this repo
+cd magicplay-arm
 sh install.sh
+</code></pre>
+
+<h3>
+<a name="raspberrypi-image-alternative-install" class="anchor" href="#raspberrypi-image-alternative-install"><span class="octicon octicon-link"></span></a>RaspberryPi Image (Alternative Install)</h3>
+
+<p>Download our RaspberryPi ArchLinux-2014.05 image to get up and running in no time!</p>
+
+<pre><code>curl -C - -O http://download.doubletwist.com/magicplay/MagicPlayPi-Al-2014.05.img.zip
+</code></pre>
+
+<p>unzip it and</p>
+
+<pre><code>dd bs=1m if=MagicPlayPi-Al-2014.05.img of=&lt;/dev/foobar&gt;
 </code></pre>
 
 <h3>
