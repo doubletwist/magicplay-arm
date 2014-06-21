@@ -1,0 +1,11 @@
+[Unit]
+Description=Alljoyn Sink Service
+Requires=alljoyn.service
+After=alljoyn.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/SinkService TwistBox
+
+[Install]
+WantedBy=multi-user.target

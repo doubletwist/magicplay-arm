@@ -1,0 +1,12 @@
+[Unit]
+Description=Sound dummy Service
+Requires=alljoyn.service
+After=alljoyn.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/aplay /usr/lib/magicplay/silent.wav
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
