@@ -11,6 +11,8 @@ For more information please look @ [http://www.magicplay.com/](http://www.magicp
 
 ### Install
 
+*Note:* currently we only have systemd init scripts. This install will only work for Arch Linux!
+
 ```
 curl -O https://github.com/doubletwist/magicplay-arm/tarball/master # or clone this repo
 cd magicplay-arm
